@@ -16,6 +16,10 @@ func main() {
 		"black": "#0000",
 		"blue":  "#8989",
 	}
+
+	// Adding a new element to the map (with no prior key:value pair)
+	colors["green"] = "#9090"
+
 	printMap(colors)
 }
 
@@ -23,7 +27,7 @@ func main() {
 	maps vs structs in go
 	1. In maps, all the keys together and all the values together should have
 	the same type. But, in structs we are free to have fields of different types.
-	2. Keys are indexed ==> what the benefit? ==> we can iterate over them using a
+	2. In maps, Keys are indexed ==> what is the benefit? ==> we can iterate over them using a
 	for loop! The same is not true for structs, and iteration over key:value pairs is
 	not possible
 	3. Maps: reference types / structs: value types ==> meaning that when you
